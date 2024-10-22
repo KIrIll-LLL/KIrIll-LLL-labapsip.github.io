@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+        type="text/javascript"></script>
+
+</head>
+
+<body onLoad="getSecs()">
+
+
+    <header class="header">
+        <nav class="nav">
+            <button class="header__burger-btn" id="burger">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="logo">
+                <img class="logo-img" src="img/logo.png" alt="">
+            </div>
+            <ol class="box-nav-btn">
+                <li class="box-nav-btn__btn"><a href="">Курсы</a></li>
+                <li class="box-nav-btn__btn"><a href="">О центре</a></li>
+                <li class="box-nav-btn__btn"><a href="">Контакты</a></li>
+            </ol>
+            <div class="ad">Скидка 15% на год обучение</div>
+            <div class="number">+7 (3812) 38-71-78</div>
+        </nav>
+    </header>
+    <button id="backToTopButton"><svg width="31" height="48" viewBox="0 0 21 38" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L19 19L1 37" stroke="white" stroke-width="2" />
+        </svg></button>
+    <!-- модульное окно -->
+    <div class="popup-fade">
+        <div class="popup">
+            <a class="popup-close" href="#"><svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1.55022 0.757662C0.797063 1.51082 0.797063 2.73192 1.55022 3.48507L19.935 21.8699C20.3534 22.2883 21.0318 22.2883 21.4502 21.8699C22.2034 21.1167 22.2034 19.8956 21.4502 19.1424L3.06545 0.757662C2.64703 0.339243 1.96864 0.339243 1.55022 0.757662Z"
+                        fill="white" />
+                    <path
+                        d="M21.4502 0.757679C22.2034 1.51083 22.2034 2.73194 21.4502 3.48509L3.06545 21.8699C2.64703 22.2883 1.96864 22.2883 1.55022 21.8699C0.797063 21.1167 0.797063 19.8956 1.55022 19.1425L19.935 0.757679C20.3534 0.339261 21.0318 0.339261 21.4502 0.757679Z"
+                        fill="white" />
+                </svg></a>
+            <p>Всплывающие окна имеют широкий диапазон применений...</p>
+        </div>
+    </div>
+    <!-- -------------- -->
+    <section class="section-1">
+        <div class="section-1__box-1">
+            <h1 class="section-1__box-1__title">Подготовка к ЕГЭ и ОГЭ</h1>
+            <div class="section-1__box-1__cnt">
+                <div class="box-1__cnt__item up">
+                    <div class="item__img-1"><img src="img/img-sec-1-1.png" alt=""></div>
+                    <div class="item__txt">Готовим на баллы 80+</div>
+                </div>
+                <div class="box-1__cnt__item down">
+                    <div class="item__img-2"><img src="img/img-sec-1-2.png" alt=""></div>
+                    <div class="item__txt">Подготовка очно и онлайн</div>
+                </div>
+                <div class="box-1__cnt__item up">
+                    <div class="item__img-3"><img src="img/img-sec-1-3.png" alt=""></div>
+                    <div class="item__txt">Более 10 лет опыта</div>
+                </div>
+                <div class="box-1__cnt__item down">
+                    <div class="item__img-4"><img src="img/img-sec-1-4.png" alt=""></div>
+                    <div class="item__txt">Лицензионные программы</div>
+                </div>
+            </div>
+            <div class="section-1__box-1__cnt-2">
+                <div class="box-1__cnt-2__txt">Центр "Логос" приглашает на курсы ЕГЭ и ОГЭ по всем предметам. Подготовка
+                    с гарантией 20+ баллов к вашему результату.</div>
+                <button class="box-1__cnt-2__btn">Подробнее</button>
+            </div>
+        </div>
+
+    </section>
+    <section class="section-2">
+        <div class="section-2__cnt">
+            <div class="section-2__box-1">
+                <h2>Центр “Логос” готовит к ЕГЭ с 2009 года</h2>
+            </div>
+            <div class="section-2__box-2">
+                <div class="section-2__box-2__cnt">
+                    <div class="section-2__box-2__item">
+                        <div class="txt-1">20</div>
+                        <div class="txt-2">Преподователей</div>
+                    </div>
+                    <div class="section-2__box-2__item">
+                        <div class="txt-1">20+</div>
+                        <div class="txt-2">Баллов к вашему результату</div>
+                    </div>
+                </div>
+                <div class="section-2__box-2__cnt">
+                    <div class="section-2__box-2__item">
+                        <div class="txt-1">80%</div>
+                        <div class="txt-2">Учеников поступают в вуз на бюджет</div>
+                    </div>
+                    <div class="section-2__box-2__item">
+                        <div class="txt-1">5000</div>
+                        <div class="txt-2">Выпускников за все время работы</div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-2__box-3">
+                <div class="section-2__box-3__item-1">
+                    <div>Центр “Логос” - организатор ЕГЭ-Марафона, в котором приняли участие 100 школ Омска. Более 300
+                        учеников проверили свою готовность к экзамену, потренировались и бесплатно получили консультации
+                        экспертов ЕГЭ, чтобы улучшить свои баллы на экзамене</div>
+                </div>
+                <div class="section-2__box-3__item-2">
+                    <img class="box-3__item__img" src="img/img-sec-2.png" alt="" width="631px" height="371px">
+                    <div class="box-3__item__txt">Что нужно сделать для успешного старта подготовки к ЕГЭ и ОГЭ? Самое
+                        первое и самое важное - определиться с предметами и определить текущий уровень знаний по ним! Мы
+                        ежегодно тестируем более 2 500 учеников и даём персональные рекомендации по результатам тестов.
+                        Причём мы делаем это АБСОЛЮТНО БЕСПЛАТНО. Запишите своего ребёнка на бесплатное тестирование
+                        прямо сейчас и уже завтра вы получите исчерпывающие рекомендации по подготовке.</div>
+                    <button class="box-3__item__btn">Записаться на тестирование</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    
+
+    <section class="section-3">
+        <div class="section-3-cnt">
+            <div class="section-3-cnt__title">Почему родители выпускников выбирают “Логос”?</div>
+            <div class="section-3-cnt__inf">
+                <div class="section-3-cnt__inf__box-1">
+                    <div class="block">
+                        <div class="txt-1">83</div>
+                        <div class="txt-2">баллов средний результат учеников в ЛОГОСе</div>
+                    </div>
+                    <div class="block">
+                        <div class="txt-1">20+</div>
+                        <div class="txt-2">баллов к своему начальному урвоню</div>
+                    </div>
+                    <div class="block">
+                        <div class="txt-1">25+</div>
+                        <div class="txt-2">балла выше результат, чем в среднем по стране</div>
+                    </div>
+                </div>
+                <div class="section-3-cnt__inf__box-2">
+                    <div class="block">
+                        <div class="txt-1">Поддержка 24/7</div>
+                        <div class="txt-2">Наставник ученика, который всегда на связи с ним и родителями.</div>
+                    </div>
+                    <div class="block">
+                        <div class="txt-1">Гарантия результата</div>
+                        <div class="txt-2">За 11 лет подготовки к ЕГЭ и ОГЭ мы научились давать гарантированный
+                            результат. Он обеспечивается через систему сопровождения ребенка, помощь личного наставника
+                            и индивидуальные консультации педагогов.</div>
+                    </div>
+                    <div class="block">
+                        <div class="txt-1">Индивидуальный подход</div>
+                        <div class="txt-2">Фиксируем цель подготовки к ЕГЭ и ОГЭ для каждого учащегося. И определяем,
+                            как мы к этой цели прийдем.</div>
+                    </div>
+                    <div class="block">
+                        <div class="txt-1">Отслеживание результата</div>
+                        <div class="txt-2">Отслеживание усвоенности материала на каждом этапе обучения. Разработана
+                            система контроля. Ежемесячный отчет успеваемости для учеников и родителей.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-4">
+        <div class="section-4-cnt">
+            <div class="title">Форматы обучения в Центре</div>
+            <div class="inf">
+                <div class="block-card-r">
+                    <div class="card">
+                        <div class="card-title">Подготовка к ЕГЭ-2021</div>
+                        <ul class="ul">
+                            <li class="li">Группы до 8 человек</li>
+                            <li class="li">Обучение лично с каждым</li>
+                            <li class="li">Лучшие преподаватели</li>
+                            <li class="li">Оптимальное соотношение качество/цена</li>
+                        </ul>
+                        <button>Подробнее</button>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">Подготовка к ОГЭ-2021</div>
+                        <ul class="ul">
+                            <li class="li">Эксперты ЕГЭ и ОГЭ</li>
+                            <li class="li">Группы до 8 человек</li>
+                            <li class="li">Обучение с нуля</li>
+                        </ul>
+                        <button>Подробнее</button>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">Повышаем школьную оценку</div>
+                        <ul class="ul">
+                            <li class="li">Формируем базу знаний</li>
+                            <li class="li">Повышаем интерес к предмету</li>
+                            <li class="li">Всего 10-15 занятий</li>
+                            <li class="li">Помогаем повысить школьную оценку на 1,7 балла</li>
+                        </ul>
+                        <button>Подробнее</button>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">Профориентация. Клуб битуриента</div>
+                        <ul class="ul">
+                            <li class="li">Выявляем персональные потребности ребенка</li>
+                            <li class="li">Даем экспертное заключение по выбранной специальности</li>
+                            <li class="li">Формируем индивидуальный маршрут для поступления траекторию обучения</li>
+                        </ul>
+                        <button>Подробнее</button>
+                    </div>
+                </div>
+                <div class="card-l">
+                    <div class="card-l-title">Шаг №</div>
+                    <div class="card-l-namber-bx">
+                        <div class="item" id="div1">1</div>
+                        <div class="item-">></div>
+                        <div class="item" id="div2">2</div>
+                        <div class="item-">></div>
+                        <div class="item" id="div3">3</div>
+                    </div>
+                    <p class="card-l-txt" id="myParagraph">Выбрать предмет</p>
+                    <select class="select-card-l" id="mySelect">
+                        <option value="1">Математика</option>
+                        <option value="2">Физика</option>
+                    </select>
+                    <button class="card-l-btn" id="myButton">Дальше</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="section-5">
+        <div class="section-5-cnt">
+            <div class="section-3-cnt__title">Чем полезны курсы в центре “Логос”?</div>
+            <div class="section-5-cnt__inf">
+                <ul class="block-1">
+                    <li class="block-li">Подготовиться к ЕГЭ на высокие баллы</li>
+                    <li class="block-li">Понять способности и предрасположенность ребенка</li>
+                    <li class="block-li">Сдать ОГЭ и закончить 9 класс </li>
+                    <li class="block-li">Знание всех нюансов экзамена </li>
+                    <li class="block-li">Подготовиться в условиях дистанционного обучения</li>
+                    <li class="block-li">Поступление в вузы страны на бюджет</li>
+                    <li class="block-li">Высокая оценка в аттестат за 9 класс</li>
+                    <li class="block-li">Подготовка с преподавателями - экспертами ЕГЭ</li>
+                    <li class="block-li">Повышение школьной оценки</li>
+                    <li class="block-li">Подготовка в условиях реального экзамена. Помощь в работе со стрессом в
+                        предэкзаменационной ситуации</li>
+                </ul>
+                <div class="block-2">
+                    <div class="box-1">Мы не даем волшебную таблетку, не проводим нудных психологических тестов, имеющих
+                        широкое толкование. Мы готовим гармоничную личность для перехода во взрослую жизнь.</div>
+                    <div class="box-2">
+                        <img src="img/vopr.png" alt="" width="172" height="160">
+                        <div class="box-txt">
+                            <div class="txt">С чем вы обращаетесь в Центр “Логос”? Задайте ваш вопрос здесь.</div>
+                            <button>Задать вопрос</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-6">
+        <div class="section-6-cnt">
+            <div class="title">
+                <h2>С заботой о каждом ученике!</h2>
+                <p>Чем может помочь Центр “Логос” родителям и детям!</p>
+            </div>
+            <div class="block-txt">
+                <div class="box-txt">С чем бы к нам не пришел ученик: подготовка к ЕГЭ или ОГЭ речь всегда будет идти о
+                    конечной цели: увидеть в ребенке желание или помочь ему сформулировать цель и поддерживать эго на
+                    всем пути. Что предложить ребенку, у которого все получается?<br>(История Алены С.) </div>
+                <div class="box-txt">Как поддержать ребенка, который узнал о какой-то специальности и очень хочет на нее
+                    поступить, а бюджетных мест мало. Как быть в этой ситуации?<br>(История Романа Г.)</div>
+                <div class="box-txt">Как быть ребенку, когда у него низкий старт, не хватает подготовки, а он хочет
+                    учиться в вузе? Что делать?<br>(История Антона М.)</div>
+                <button>Получить консультацию</button>
+            </div>
+        </div>
+    </section>
+    <div class="container-swiper">
+        <div class="gallery">
+            <!-- Свайпер -->
+            <div class="swiper gallery-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a data-fslightbox="gallery" class="gallery__link" href="img/1.jpeg">
+                            <img class="gallery__img" src="img/1.jpeg" alt="1">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a data-fslightbox="gallery" class="gallery__link" href="img/2.jpeg">
+                            <img class="gallery__img" src="img/2.jpeg" alt="2">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a data-fslightbox="gallery" class="gallery__link" href="img/3.jpeg">
+                            <img class="gallery__img" src="img/3.jpeg" alt="3">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a data-fslightbox="gallery" class="gallery__link" href="img/4.jpeg">
+                            <img class="gallery__img" src="img/4.jpeg" alt="4">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a data-fslightbox="gallery" class="gallery__link" href="img/5.jpeg">
+                            <img class="gallery__img" src="img/5.jpeg" alt="5">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a data-fslightbox="gallery" class="gallery__link" href="img/6.jpeg">
+                            <img class="gallery__img" src="img/6.jpeg" alt="6">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a data-fslightbox="gallery" class="gallery__link" href="img/7.jpeg">
+                            <img class="gallery__img" src="img/7.jpeg" alt="7">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Навигация -->
+            <div class="gallery__navigation">
+                <button class="gallery__btn gallery__btn-prev">
+                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 11L0.999995 6L6 0.999998" stroke="white" />
+                    </svg>
+                </button>
+                <button class="gallery__btn gallery__btn-next">
+                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 11L6.00001 6L1 0.999997" stroke="white" />
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="gallery-pagination"></div>
+
+    </div>
+    <!-- ---------------------------------------------- -->
+    <section class="section-7">
+        <div class="section-7-cnt">
+            <div class="box-title">
+                <div class="title">Удобно добираться</div>
+                <p class="title-txt-1">2 офиса в центре города</p>
+                <p class="title-txt-2">Выбирайте удобный</p>
+            </div>
+            <div class="box-info">
+                <div class="karta">
+                    <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae0f80502561f2ee36cfd179cbbe9d268d1e8a7eb9e59afcda80194d69981a101&amp;max-width=628&amp;min-width=350&amp;height=466&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+                <form action="">
+                    <label for="">Выбрать филиал</label>
+                    <select name="" id="select-form">
+                        <option value="1">Маяковского, 14 304 офис; 3 этаж</option>
+                        <option value="2">Степанца, 10/5 2 этаж</option>
+                        <option value="3">ТЦ Сибирские Огни Красный Путь, 63 2 этаж</option>
+                    </select>
+                    <input type="text" placeholder="Ваше имя">
+                    <label for="">Ваш телефон</label>
+                    <input type="tel" id="phone" placeholder="8(999) 999-9999" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <button>Получить консультацию</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <!-- свайпер авто -->
+    <section class="section-8">
+        <div class="title">Наши ученики поступают</div>
+        <div class="swiper mySwiper-2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box-i">
+                        <img src="img/i-1.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-i">
+                        <img src="img/i-2.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-i">
+                        <img src="img/i-3.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-i">
+                        <img src="img/i-4.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-i">
+                        <img src="img/i-5.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-i">
+                        <img src="img/i-6.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-i">
+                        <img src="img/i-7.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-i">
+                        <img src="img/i-8.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-i">
+                        <img src="img/i-9.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-i">
+                        <img src="img/i-10.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-i">
+                        <img src="img/i-11.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-i">
+                        <img src="img/i-12.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-i">
+                        <img src="img/i-13.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-i">
+                        <img src="img/i-14.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-i">
+                        <img src="img/i-15.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-i">
+                        <img src="img/i-16.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-i">
+                        <img src="img/i-17.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-i">
+                        <img src="img/i-18.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-i">
+                        <img src="img/i-19.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+    </section>
+    <!-- банер анимация -->
+    <div class="container-anim">
+        <div class="box-anim">
+            <img src="img/baner.jpg" alt="">
+        </div>
+    </div>
+    <!-- кнопака показать больше -->
+    <div class="section-b-txt">
+        <p>Как уже неоднократно упомянуто, стремящиеся вытеснить
+            традиционное производство, нанотехнологии освещают
+            чрезвычайно<span id="dots-1">...</span>
+            <span id="more-1"> интересные особенности картины в целом,
+                однако конкретные выводы, разумеется, объединены в целые кластеры
+                себе подобных! Прежде всего, курс на социально-ориентированный
+                национальный проект прекрасно подходит для реализации системы
+                массового участия.</span>
+        </p>
+
+        <button onclick="myreadMoreFunction()" id="myReadBtn">Показать больше</button>
+    </div>
+    <span id='timer-counter'></span>
+
+    <section class="section-9">
+        <form action="" id="form-val">
+            <label class="l-form" for=""><input name="name" class="inp-form" id="firstn" type="text"
+                    >Имя</label>
+                    <span id="firstnError" style="color: rgb(255, 9, 9);"></span>
+            <label class="l-form" for=""><input name="tname" class="inp-form" id="twon" type="text"
+                    >Фамилия</label>
+                    <span id="twonError" style="color: rgb(255, 9, 9);"></span>
+            <label class="l-form" for=""><input name="fname" class="inp-form" id="freen" type="text"
+                    >Отчество</label>
+                    <span id="freenError" style="color: rgb(255, 9, 9);"></span>
+            <label class="l-form" for=""><input name="email" class="inp-form" id="email" type="email">Email</label>
+            <span id="emailError" style="color: rgb(255, 9, 9);"></span>
+            <label class="l-form" for=""><input class="inp-form" id="phone-form" type="tel" name="tel-form"
+                    >Номер телефона</label>
+                    <span id="phoneError" style="color: rgb(255, 9, 9);"></span>
+
+            <!-- <label class="l-form" for=""><input class="inp-form" type="password">Пароль</label> -->
+            <fieldset>
+                <legend>Ваш пол</legend>
+                <label for=""><input class="inp-rad" type="radio" name="pol" value="man" checked>Мужской</label>
+                <label for=""><input class="inp-rad" type="radio" name="pol" value="wooman">Женский</label>
+            </fieldset>
+            <label for="">Свободное время</label>
+            <fieldset class="ramka">
+                <label for=""><input class="myCheckbox" type="checkbox" name="timeday" value="morning">Утро</label>
+                <label for=""><input class="myCheckbox" type="checkbox" name="timeday" value="obed">Обед</label>
+                <label for=""><input class="myCheckbox" type="checkbox" name="timeday" value="vecher">Вечер</label>
+            </fieldset>
+            <span id="checkboxError" style="color: rgb(255, 9, 9);"></span>
+            <label for="">Преподаватели</label>
+            <select name="" id="sel-form">
+                <option value="1">Выберите преподавателя</option>
+                <option name="prepod" value="2">Ирина Олеговна</option>
+                <option name="prepod" value="3">Кирилл Владимирович</option>
+                <option name="prepod" value="4">Григорий Лепс</option>
+            </select>
+            <span id="selectError" style="color: rgb(255, 9, 9);"></span>
+            <button type="submit" id="checkBtn" onclick="DataAlert()">Отправить</button>
+        </form>
+        <button id="delete-cookies">Удалить cookies</button>
+        <button id="DelLocal" onclick="delLoc()">Удалить LocalSt</button>
+        <div id="writeLS"></div>
+    </section>
+    <div id="crd-main">
+        <!-- <div class="crd-cn">
+        <div class="crd">
+            <span class="crd-title"></span>
+            <img src="" alt="">
+            <p class="crd-price"></p>
+        </div>
+    </div> -->
+    </div>
+
+    <footer class="footer">
+        <div class="cnt-footer">
+            <div class="logo">
+                <img class="logo-img" src="img/logo.png" alt="">
+            </div>
+            <ol class="box-nav-btn">
+                <li class="box-nav-btn__btn"><a href="">Курсы</a></li>
+                <li class="box-nav-btn__btn"><a href="">О центре</a></li>
+                <li class="box-nav-btn__btn"><a href="">Контакты</a></li>
+            </ol>
+            <div class="number">+7 (3812) 38-71-78</div>
+        </div>
+
+    </footer>
+
+    <script src="js/card.js"></script>
+    <script scr="js/fslightbox.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/sw-img.js"></script>
+    <!-- время на сайте -->
+    <script language="javascript">
+        startdate = new Date();
+        clockStart = startdate.getTime();
+        function initStopwatch() {
+            var thisTime = new Date();
+            return (thisTime.getTime() - clockStart) / 1000;
+        }
+        function getSecs() {
+            var tSecs = Math.round(initStopwatch());
+            var iSecs = tSecs % 60;
+            var iMins = Math.round((tSecs - 30) / 60);
+            var sSecs = "" + ((iSecs > 9) ? iSecs : "0" + iSecs);
+            var sMins = "" + ((iMins > 9) ? iMins : "0" + iMins);
+            document.getElementById("timer-counter").innerHTML = sMins + ":" + sSecs;
+            setTimeout('getSecs()', 1000);
+        }
+    </script>
+</body>
+
+</html>

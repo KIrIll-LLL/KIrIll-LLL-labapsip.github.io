@@ -1,0 +1,29 @@
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: azure;
+    text-align: center;
+    text-shadow: rgb(0, 149, 255) 3px 0 10px;
+
+}
+body{
+    background: #7b7474;
+}
+li{
+    text-align: center;
+    font-size: xx-large;
+}
+.text{
+    white-space: nowrap;
+}
+.text_i{
+    white-space: normal;	
+	display: inline-block;
+	width: 48%;
+	vertical-align: top;
+	background: #fff2e1;
+}
+.text.text_i:first-child {
+	margin-right: 4%;
+}

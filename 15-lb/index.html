@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<style>
+    body, .block{
+        display: flex;
+        justify-content:space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .block{
+        max-width: 80%;
+        background-color: rgb(86, 65, 180);
+        padding: 10px 30px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+    li, p, button{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 10px;
+        color: aliceblue;
+    }
+    button{
+        width: 100px;
+        height: 50px;
+        background-color: rgb(136, 0, 255);
+        border: none;
+        cursor: pointer;
+        transition: ease-in-out 0.3s;
+        &:hover{
+            scale: 1.1;
+            border-radius: 10px;
+            font-size: 30px;
+            color: rgb(28, 231, 28);
+            font-weight: 700;
+        }
+    }
+</style>
+<body>
+    <div class="block">
+
+    <ul>
+        <li>window — глобальный объект браузера.
+        </li>
+        <li>document — объект, представляющий HTML-документ.
+        </li>
+        <li>console — объект для вывода информации в консоль браузера.
+        </li>
+    </ul>
+    <p>Описание объекта: const car = {
+        make: 'Toyota',
+        model: 'Corolla',
+        year: 2020,
+        color: 'red'
+    };
+    </p>
+    <p>Пример доступа к свойствам объекта в JavaScript: console.log(car.make); // Вывод: Toyota
+        console.log(car['model']); // Вывод: Corolla
+        </p>
+    <button onclick="Q()">O</button>
+    <p>Команда для удаления свойства объекта: Для удаления свойства используется оператор delete. delete car.color;
+        console.log(car.color); // Вывод: undefined
+        </p>
+    <button onclick="W()">O</button>
+    <p>Команда для проверки существования свойства: Для проверки существования свойства используется оператор in или метод hasOwnProperty.</p>
+    <button onclick="E()">O</button>
+    <p>Команда для перебора свойств объекта: Для перебора свойств объекта можно использовать цикл for...in. for (let key in car) {
+        if (car.hasOwnProperty(key)) {
+            console.log(`${key}: ${car[key]}`);
+        }
+    }
+    </p>
+    <button onclick="R()">O</button>
+</div>
+
+</body>
+</html>

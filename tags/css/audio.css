@@ -1,0 +1,23 @@
+h1{
+color: azure;
+text-align: center;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-transform: uppercase;
+letter-spacing: 10px;
+text-shadow: rgb(0, 149, 255) 3px 0 10px;
+
+}
+body{
+background-image:url(/tags/image/fon.jpeg);
+}
+.aud{
+        /* display: flex;
+        justify-content: center;   */
+        margin: 50px;  
+}
+.vid{
+        margin : 50px;
+    /* display: flex;
+        justify-content: center; */
+}
+

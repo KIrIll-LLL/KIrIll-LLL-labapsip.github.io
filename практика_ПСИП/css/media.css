@@ -1,0 +1,206 @@
+@media screen and (max-width: 768px) and (min-width: 375px){
+    .header{
+        margin-bottom: 1vh;
+        display: block;
+  position: fixed;
+    }
+    .header.open .box-nav-btn {
+        transform: translateX(100%);
+    }
+    .nav{
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .box-nav-btn {
+        position: absolute;
+        display: block;
+        text-align: center;
+        left: -250px;
+        top: 0;
+        width: 200px;
+        background: linear-gradient(85.56deg, #9311FF 0%, #BD1CFF 96.92%);
+        padding:50px 50px;
+        transition: transform .5s;
+        border-radius: 50px 16px 50px 16px;
+
+    }
+    .box-nav-btn__btn{
+        margin-bottom: 20px;
+        margin-left: 50px;
+    }
+    .box-nav-btn__btn a{
+      color: white;
+
+    }
+    .header__burger-btn {
+        display: block;
+        margin-right: 2vw;
+        background-color: transparent;
+    }
+
+    .ad{
+        order: 2;
+        font-size: 18px;
+        line-height: 117%;
+        text-wrap: wrap;
+        text-align: center;
+        margin: 0 auto;
+        min-width: 90%;
+        height: 50px;
+         }
+    .number{
+        font-size: 19px;
+    }
+    .section-1__box-1__title{
+        text-align: center;
+    }
+    .section-1__box-1__cnt{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 10vh;
+    }
+    .section-1__box-1__cnt-2 {
+      margin-top: 16vw;
+      }
+
+    .box-1__cnt__item {
+        width: 40%;
+    }
+    .section-1__box-2 {
+        display: none;
+    }
+    .section-2__box-2{
+
+        justify-content: center;
+      }
+      .section-2__box-2__cnt{
+        width: 90%;
+        justify-content: space-between;
+
+      }
+      .box-3__item__img{
+        display: none;
+      }
+      .section-2__box-3__item-1{
+        display: none;
+      }
+      .section-2__box-3{
+        justify-content: center;
+      }
+      .section-4{
+        margin-bottom: clamp(5.5rem, 23.831rem + -48.346vw, 0.625rem);
+  
+      }
+      .section-5-cnt__inf{
+        flex-wrap: wrap;
+        padding: 1%;
+        justify-content: center;
+        margin: 0px 4%;
+      }
+
+      .section-5-cnt__inf .block-1{
+        width: 100%;
+        margin-left: 5vw;
+      }
+      .section-5-cnt__inf .block-2{
+        width: 100%;
+      }
+      .section-5-cnt__inf .block-2 .box-2 img{
+        display: none;
+        align-items: center;
+    }
+
+    .section-8{
+      flex-direction: column;
+    }
+    .section-8 .title{
+      margin-bottom: 10vw;
+
+    margin-left: 0;
+    }
+  }
+ 
+  @media screen and (max-width: 1250px) and (min-width: 375px){
+    .section-4-cnt .inf{
+        align-items: center;
+        flex-direction: column;
+      }
+      .section-4-cnt .block-card-r {
+        justify-content: center;
+        margin-bottom: 2vw;
+    }
+    .card-l{
+        width: 65%;
+    }
+    .section-1{
+        background-image: none;
+
+    }
+    .section-7-cnt .box-info{
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+
+  @media screen and (max-width: 1070px) and (min-width: 768px){
+    
+    .section-2__box-2{
+
+        justify-content: flex-end;
+      }
+      .section-2__box-2__cnt{
+        width: clamp(23.125rem, 15.369rem + 33.094vw, 37.5rem);
+        justify-content: space-between;
+      
+      }
+
+      .section-3-cnt__inf{
+        justify-content: center;
+      }
+  }
+
+  @media screen and (max-width: 375px){
+    .section-1__box-1{
+      gap: 40px;
+    }
+    .section-1{
+      margin-bottom: 50px;
+    }
+    .section-1__box-1__cnt-2 {
+        flex-wrap: wrap;
+        row-gap: 5vh;
+        align-items: center;
+        margin-top: 5vh;
+        justify-content: center;
+    }
+    .section-2__cnt {
+        margin: 0px 5vw;
+    }
+   
+    .section-3-cnt__inf{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section-3-cnt__inf__box-1{
+        order: 1;
+    }
+    .section-3-cnt__inf__box-1, .section-3-cnt__inf__box-1{
+        width: 100%;
+        align-items: center;
+    }
+    
+    .section-4-cnt .block-card-r .card{
+        padding-left: 30px;
+    }
+  
+    .section-5-cnt__inf{
+        align-items: center;
+    }
+    .section-5-cnt__inf .block-2 .box-2 img{
+        display: none;
+    }
+  }
+
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+    <title>Формы</title>
+    <meta name="users_forms" lang="ru" content="формы">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <h1>формы</h1>
+    <form method="post" enctype="application/x-www-form-urlencoded" action="https://pizza.example.com/order.cgi">
+        <div class="inp">
+         <p class="in1"><label>Имя: <input name="custname" required autocomplete="shipping name"></label></p>
+        <p class="in1"><label>Телефон: <input type=tel name="custtel" autocomplete="shipping tel"></label></p>
+        <p class="in1"><label>Код: <input name="custbuzz" inputmode="numeric"></label></p>
+        <p class="in1"><label>Email: <input type=email name="custemail" autocomplete="shipping email"></label></p>
+      </div>
+        <fieldset>
+           <legend>Размер пиццы</legend>
+           <p><label> <input type="radio" name="size" required value="small">Small</label></p>
+           <p><label> <input type="radio" name="size" required value="medium">Medium</label></p>
+           <p><label> <input type="radio" name="size" required value="large">Large</label></p>
+        </fieldset>
+        <fieldset>
+           <legend>Начинка для пиццы</legend>
+           <p><label> <input type="checkbox" name="topping" value="бекон">Bacon</label></p>
+           <p><label> <input type="checkbox" name="topping" value="сыр">Extra Cheese</label></p>
+           <p><label> <input type="checkbox" name="topping" value="лук">Onion</label></p>
+           <p><label> <input type="checkbox" name="topping" value="грибы">Mushroom</label></p>
+        </fieldset>
+        <p><label>Время доставки: <input type="time" min="11:00" max="21:00" step="900" name="delivery" required></label></p>
+        <p><label>Инструкция по доставке: <textarea name="comments" maxlength=1000></textarea></label></p>
+        <p><button>Отправить заказ</button></p>
+     </form>
+</body>
+</html>

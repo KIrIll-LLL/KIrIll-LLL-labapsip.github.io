@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showTime(){
+             let date = new Date();
+let hours = date.getHours();
+let minutes = date.getMinutes();
+alert(`Текущее время: ${hours} часов, ${minutes} минут`);
+        }
+       
+
+    </script> 
+</head>
+<body>
+    <button onclick="showTime()">Показать Год </button>
+    <button onclick="FIO()">Вывести ФИО</button>
+    <p id="n"></p>
+
+    <label for="">Введите значение x:</label> <input id="x" type="number"><br>
+    <label for="">Введите значение y:</label> <input id="y" type="number"><br>
+<button onclick="calculate()">Рассчитать</button>
+<p id="result"></p>
+<br>
+<button onclick="BEL()">Вывести</button>
+<p id="lengthS1"></p>
+<p id="lengthS2"></p>
+<p id="isMinskInS1"></p>
+<p id="eighthCharS2"></p>
+<p id="asciiEighthCharS2"></p>
+
+<button onclick="manipulateArray()">массив</button>
+    <p id="originalArray"></p>
+    <p id="modifiedArray"></p>
+    <script>
+        function FIO(){
+            let n = 0;
+            let output = "";
+            while(n<=13){
+                output +=  "Дудинский Кирилл Владимирович" + "<br>";
+                n++;
+            }
+            document.getElementById("n").innerHTML = output;
+
+        }
+
+        function manipulateArray() {
+            // Создаем массив из 7 целых элементов
+            let array = [12, 7, 5, 9, 3, 15, 1];
+            
+            // Сортируем массив по убыванию
+            let sortedArray = [...array].sort((a, b) => b - a);
+            
+            // Находим минимальный элемент и его индекс
+            let minElement = Math.min(...sortedArray);
+            let minIndex = sortedArray.indexOf(minElement);
+            
+            // Меняем местами последний и минимальный элемент
+            let lastIndex = sortedArray.length - 1;
+            [sortedArray[minIndex], sortedArray[lastIndex]] = [sortedArray[lastIndex], sortedArray[minIndex]];
+            
+            // Выводим исходный и измененный массивы
+            document.getElementById('originalArray').innerText = `Исходный:  [${array.join(', ')}]`;
+            document.getElementById('modifiedArray').innerText =`Измененный: [${sortedArray.join(', ')}]` ;
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
